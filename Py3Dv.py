@@ -9,11 +9,6 @@ w, h = 400, 400
 screen = pygame.display.set_mode((w, h))
 
 
-class obj:
-
-    def __init__(self, vertices):
-        self.vertices = vertices
-
 
 def load_obj(path_to_obj):
     """ Returns a list of vertices from a given .obj file """
@@ -32,6 +27,6 @@ def find_edges(vertices):
 
 
 if __name__ == "__main__":
-    """ 3DPy startup script """
+    """ Py3Dv startup script """
 
     obj = load_obj("./test.obj")
